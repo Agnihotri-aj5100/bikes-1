@@ -1,0 +1,129 @@
+.header {
+  position: absolute;
+  z-index: 999 !important;
+}
+
+.header-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  width: 100%;
+  background: transparent;
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+  }
+}
+
+@media (max-width: 1023px) {
+  .header-container {
+    background: black;
+    position: fixed;
+    width: 100%;
+    display: block;
+  }
+}
+
+.header-desktop {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+}
+@media (max-width: 768px) {
+  .header-desktop {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+}
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .first-row {
+    justify-content: space-around;
+    gap: 100px;
+    padding: 18px 0px;
+    align-items: center;;
+
+  }
+}
+.first-row .Brand-Logo{
+  
+}
+@media (max-width:768px) {
+  .first-row .Brand-Logo{
+  width: 150px;
+  height: 14px;
+  }
+  .first-row .Brand-Logo img{
+    width: 100%;
+}
+}
+
+.first-row .close-icon {
+  height: 36px;
+  width: 42px;
+}
+.first-row .greyIcon {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+::v-deep .header-icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.desktop {
+  display: block;
+}
+
+@media (max-width: 1023px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.mobile {
+  display: flex;
+  align-content: center;
+  padding: 12px 8px;
+  justify-content: space-between;
+}
+
+.mobile .middle .logo {
+  max-height: 24px;
+}
+
+.mobile .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mobile .right > * {
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.mobile.single {
+  padding: 13px 8px;
+}
+
+.mobile.single .middle .logo {
+  max-height: 23px;
+}
+
+.mobile-icon {
+  width: 24px;
+  height: 24px;
+}

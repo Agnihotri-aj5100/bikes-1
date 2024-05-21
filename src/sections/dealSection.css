@@ -1,0 +1,256 @@
+.container {
+  padding: 70px;
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 70px 0px;
+  }
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 32% 68%;
+}
+@media (max-width: 480px) {
+  .grid-container1 {
+    grid-template-columns: auto;
+    gap: 40px;
+  }
+}
+
+.grid-item {
+  /* border: 1px solid #1c1c1c;  */
+}
+@media (max-width: 480px) {
+  .grid-item {
+    border: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .grid-item :first-child {
+    border-right: 0px;
+  }
+}
+
+.grid-item .content {
+  padding: 90px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+@media (max-width: 480px) {
+  .grid-item .content {
+    padding: 90px 0px 0px;
+    gap: 0px;
+    align-items: center;
+  }
+}
+
+.grid-item .content .title {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 480px) {
+  .grid-item .content .title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.grid-item .content .title h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0px;
+}
+@media (max-width: 480px) {
+  .grid-item .content .title h1 {
+    font-size: 20px;
+    max-width: 150px;
+  }
+  .grid-item .content .title h1 img {
+    width: 23px;
+    height: 14px;
+  }
+}
+
+.grid-item .content .title p {
+  opacity: 50%;
+  font-size: 16px;
+}
+@media (max-width: 480px) {
+  .grid-item .content .title p {
+    margin: 0px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+
+.grid-item .content .btn-onimage {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 0px;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+}
+@media (max-width: 480px) {
+  .grid-item .content .btn-onimage {
+    display: none;
+  }
+}
+
+.grid-item .content .btn-onimage::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #333;
+}
+
+.grid-item .content .btn-onimage::after {
+  content: "";
+  position: absolute;
+  bottom: -2.3px;
+  right: -9px;
+  height: 30px;
+  border-left: 2px solid #333;
+  transform: rotate(35deg);
+}
+
+.cycle-image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+  gap: 50px;
+  padding: 0px 30px 30px;
+}
+@media (max-width: 480px) {
+  .cycle-image {
+    display: none;
+  }
+}
+
+.grid-item .image-section {
+  display: flex;
+  justify-content: end;
+}
+
+.grid-item .image-section img {
+  max-width: 90%;
+}
+
+.grid-item .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.grid-item .detail h1 {
+  color: #fafaf9;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 500;
+}
+@media (max-width: 480px) {
+  .grid-item .detail h1 {
+    text-align: center;
+  }
+}
+
+.grid-item .detail p {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fafaf9;
+  line-height: 21.6px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
+}
+@media (max-width: 480px) {
+  .grid-container2 {
+    overflow: scroll;
+    margin-left: 10px;
+  }
+}
+.grid-container2 .grid-item {
+  padding: 0px 30px 40px 30px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #1c1c1c;  */
+}
+
+.grid-container2 .grid-item:not(:last-child) {
+  border-right: 0px;
+  border-top: 0px;
+}
+.grid-container2 .grid-item {
+  border-top: 0px;
+}
+@media (max-width: 480px) {
+  .grid-container2 .grid-item {
+    border-top: 1px solid #1c1c1c !important;
+  }
+}
+
+.grid-container2 .grid-item .img1 {
+  width: 300px;
+}
+
+.grid-container2 .grid-item .img1 img {
+  width: 100%;
+}
+
+.grid-container2 .grid-item .price-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grid-container2 .grid-item .price-title h1,
+.grid-container2 .grid-item .price-title p {
+  color: #fafaf9;
+  margin: 0px;
+  color: #fafaf9;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 500;
+}
+.grid-container2 .grid-item .price-title h1 {
+  display: flex;
+  justify-content: space-between;
+}
+.grid-container2 .grid-item .price-title h1 img {
+  width: 19px;
+  height: 22px;
+  opacity: 30%;
+}
+@media (max-width: 480px) {
+  .grid-container2 .grid-item .price-title h1 img {
+    display: none;
+  }
+}
+
+.grid-container2 .grid-item .price-title p {
+  font-weight: 400;
+}

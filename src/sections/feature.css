@@ -1,0 +1,222 @@
+/* Slider container */
+
+.collection {
+  height: 100%;
+  background-color: black;
+  padding-top: 100px;
+}
+.collection h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+@media (max-width: 480px) {
+  .collection h2 {
+    font-size: 20px;
+  }
+  .collection h2 img{
+    width: 23px;
+    height: 14px;
+  }
+}
+
+.sweeper-slider-container {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  /* align-items: flex-end !important; */
+  margin: 50px 0px 0px !important;
+}
+@media (max-width: 480px) {
+  .sweeper-slider-container {
+    padding: 0px;
+  }
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  width: 100%; /* Set the width to fill its container */
+}
+
+.slick-list {
+  padding: 0px !important;
+}
+@media (max-width: 480px) {
+  .slick-list {
+    padding: 0px 19px !important;
+  }
+}
+
+.slick-track {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+
+/* Slide */
+.slick-slide {
+  height: 400px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  justify-content: end;
+}
+@media (max-width: 480px) {
+  .slick-slide {
+    width: 100% !important;
+    overflow: visible;
+  }
+}
+.slick-slide img {
+}
+
+.slick-center .slick-slide {
+  height: 600px; /* Set active slide height */
+}
+/* Active slide */
+.slick-slide.slick-active {
+}
+
+/* Slide content */
+.product-card {
+  height: 300px;
+  width: 100%;
+}
+.product-card img {
+  object-fit: scale-down;
+  height: 100%;
+}
+
+/* Blur effect for non-active slides */
+.slick-slide:not(.slick-active) .product-card {
+}
+
+/* Large and focused middle slide */
+.slick-center .product-card img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  filter: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+@media (max-width: 480px) {
+  .slick-center .product-card {
+    width: 290px;
+  }
+  .slick-center .product-card img {
+    width: 290px;
+  }
+}
+.slick-slide .product-card ::after {
+  content: "";
+  position: absolute;
+  width: 51.69px;
+  height: 122.32px;
+  transform: rotate(44.95deg);
+  background-color: black;
+  top: -88.75px;
+  left: 224.22px;
+}
+@media (max-width: 480px) {
+  .slick-slide .product-card ::after {
+    top: -85.75px;
+    left: 279.22px;
+    width: 60.69px;
+    height: 122.32px;
+    transform: rotate(42.95deg);
+  }
+}
+
+/* Navigation arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 10%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 39px;
+  height: 18px;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 120px;
+}
+
+/* Dots */
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: none;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #333;
+}
+
+/* Center the slider container */
+.sweeper-slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set the aspect ratio of the slider container */
+.sweeper-slider-container .slick-slider {
+}
+.details {
+  margin-top: 10px;
+}
+h3 {
+  margin: 10px 0px 0px;
+}
+h3,
+p {
+  color: white;
+}
+p {
+  margin: 5px 0px 0px;
+}
+@media (max-width: 480px) {
+  h3,
+  p {
+    margin-left: 25px;
+  }
+}

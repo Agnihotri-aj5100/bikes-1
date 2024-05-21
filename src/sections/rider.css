@@ -1,0 +1,234 @@
+/* Style for the slider container */
+.main-box {
+  padding: 110px 0px;
+}
+.glide {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Style for the slides */
+.glide__slide {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+@media (max-width: 480px) {
+  .glide__slide {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.glide__slides {
+  display: flex;
+}
+@media (max-width: 480px) {
+  .glide__slides {
+    padding: 0px;
+  }
+}
+.glide__slide img {
+  width: 373px;
+  height: 408px;
+  object-fit: cover;
+}
+@media (max-width: 480px) {
+  .glide__slide img {
+    width: 350px;
+    height: 380px;
+  }
+}
+.glide__slide .img-box {
+  position: relative;
+}
+.glide__slide .img-box::before {
+  content: "";
+  position: absolute;
+  width: 62.69px;
+  height: 65.32px;
+  transform: rotate(44.95deg);
+  background-color: black;
+  top: -34px;
+  right: -35px;
+}
+
+@media (max-width: 480px) {
+  .glide__slide .img-box::before {
+    transform: rotate(45deg);
+    background-color: black;
+    top: -33px;
+    right: -12px;
+  }
+}
+/* Style for the detail box */
+.detail-box {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+/* Style for the detail content */
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 400px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (max-width: 480px) {
+  .detail-content {
+    gap: 15px;
+  }
+}
+
+.detail-content .str-head {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.detail-content .str-head h2 {
+  color: white;
+  margin: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media (max-width: 480px) {
+  .detail-content .str-head h2 {
+    text-align: center;
+  }
+}
+
+.detail-content .str-head .stars {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 480px) {
+  .detail-content .str-head .stars {
+    justify-content: center;
+  }
+  .detail-content .str-head .stars img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.detail-content .stars img {
+  width: 27px;
+  height: 27px;
+}
+.detail-content p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fafaf9;
+  opacity: 80%;
+}
+@media (max-width: 480px) {
+  .detail-content p {
+    text-align: center;
+    font-size: 12px;
+    margin-left: auto;
+    max-width: 350px;
+    margin-right: auto;
+  }
+}
+
+/* Style for the horizontal row */
+.detail-box .horizontal-row {
+  width: 100%;
+  height: 1px;
+  background-color: #fafaf9;
+  margin-bottom: 20px;
+  opacity: 10%;
+}
+
+/* Style for the image circle */
+.image-circle {
+  text-align: center;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 480px) {
+  .image-circle {
+    position: absolute;
+    top: 10px;
+    margin-left: 24px;
+    gap: 4px;
+  }
+  .image-circle img {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .image-circle .bio h2 {
+    font-size: 12px !important;
+    margin: 0px;
+    color: black !important;
+  }
+  .image-circle .bio {
+    align-items: flex-start !important;
+    gap: 5px;
+  }
+  .image-circle .bio p {
+    margin: 0px;
+    font-size: 11px !important;
+    text-align: left;
+    color: #000000;
+    opacity: 40%;
+  }
+}
+.image-circle .bio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.image-circle .bio h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.image-circle .bio p {
+  font-size: 16px;
+  font-weight: 350;
+  opacity: 40%;
+}
+
+.image-circle img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Style for the arrows */
+.glide__arrow {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background-color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+@media (max-width: 768px) {
+  .glide__arrow {
+    top: 65%;
+  }
+}
+.glide__arrow img {
+  width: 41px;
+  height: 14px;
+  object-fit: cover;
+}
+.glide__arrow--prev {
+  left: 10px;
+}
+
+.glide__arrow--next {
+  right: 10px;
+}

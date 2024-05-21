@@ -1,0 +1,42 @@
+.banner-images-section {
+    text-align: center;
+    padding-top:100px;
+  }
+  
+  .banner-images-section h2 {
+    font-size: 40px;
+    color: white;
+    margin: 0px;
+  }
+  @media (max-width:480px) {
+
+  .banner-images-section h2 {
+    font-size: 20px;
+  }
+  .banner-images-section h2 img{
+    width: 23px;
+    height: 14px;
+  }
+}
+  
+  .image-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .image-row img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+  }
+  @media (max-width:480px) {
+    .image-row img {
+        width: 195px;
+        height: 100%;
+    }
+
+    
+  }
+  

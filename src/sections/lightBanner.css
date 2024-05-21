@@ -1,0 +1,96 @@
+.lightBanner {
+  width: 100%;
+}
+.lightBanner .gif-section {
+  max-width: 100%;
+  position: relative;
+}
+.lightBanner .gif-section .light-img {
+  position: relative;
+  left: -195px;
+  max-width: 100%;
+}
+
+.lightBanner .gif-section .details {
+}
+.lightBanner .gif-section .details .top-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.lightBanner .gif-section .details .top-detail .top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lightBanner .gif-section .details .top-detail .top p,
+h1,
+h3 {
+  color: white;
+}
+.lightBanner .gif-section .details .top-detail .top p{
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 50%;
+}
+.lightBanner .gif-section .details .top-detail .top h1{
+    margin: 0px;
+    font-size: 40px;
+}
+.lightBanner .gif-section .details .top-detail img{
+    width: 44px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.lightBanner .gif-section .details .top-detail {
+  position: absolute;
+  top: 190px;
+  left: 797px;
+  max-width: 368px;
+  width: 100%;
+}
+.lightBanner .gif-section .details .top-detail h3 {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 50%;
+}
+.lightBanner .gif-section .details .top-detail button{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 0px;
+    width: 110px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    max-width: 350px;
+    width: 100%;
+}
+
+.lightBanner .gif-section .details .top-detail button::before{
+
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+border-bottom: 2px solid #333;
+}
+.lightBanner .gif-section .details .top-detail button::after{
+    content: "";
+    position: absolute;
+    bottom: -2.3px;
+    right: -9px;
+    height: 30px;
+    border-left: 2px solid #333;
+    transform: rotate(35deg);
+}
